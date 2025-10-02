@@ -1045,6 +1045,50 @@ section {
     padding-top: 2rem;
     border-top: 2px solid rgba(102, 126, 234, 0.1);
 }
+/* General Image Styling for Articles */
+.article-page img {
+    display: block; /* Removes bottom margin issues */
+    max-width: 100%; /* Ensures image fits container width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 500px; /* Caps height to avoid overwhelming the page */
+    margin: 2rem auto; /* Centers the image with top/bottom spacing */
+    border-radius: 10px; /* Soft corners to match your theme */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+    object-fit: cover; /* Crops to fit without distortion */
+    transition: all 0.3s ease; /* Smooth hover transitions */
+    border: 1px solid rgba(102, 126, 234, 0.1); /* Light gradient-inspired border */
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%); /* Subtle gradient backdrop */
+}
+
+/* Hover Effects */
+.article-page img:hover {
+    transform: translateY(-3px); /* Slight lift */
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.15); /* Enhanced shadow */
+    border-color: rgba(102, 126, 234, 0.2); /* Darker border on hover */
+    filter: brightness(1.05); /* Slight brightening */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .article-page img {
+        max-height: 350px; /* Smaller height on mobile */
+        margin: 1.5rem auto; /* Reduced spacing */
+        border-radius: 8px; /* Slightly smaller corners */
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06); /* Lighter shadow */
+    }
+
+    .article-page img:hover {
+        transform: translateY(-2px); /* Reduced lift on mobile */
+        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.12); /* Adjusted hover shadow */
+    }
+}
+
+/* High-DPI/Retina Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .article-page img {
+        image-rendering: -webkit-optimize-contrast; /* Sharper images on high-res */
+    }
+}
 
 @media (max-width: 768px) {
     .mobile-menu-toggle {
