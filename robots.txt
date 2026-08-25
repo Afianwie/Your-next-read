@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://afianwie.github.io/Your-next-read/sitemap.xml

@@ -2511,3 +2511,31 @@ section {
         max-height: 400px;
     }
 }
+/* Affiliate disclosure (FTC requirement for Amazon Associates) */
+.affiliate-disclosure {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #64748b;
+    background: rgba(102, 126, 234, 0.06);
+    border-left: 3px solid rgba(102, 126, 234, 0.35);
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Books page loading / empty state */
+.books-loading {
+    text-align: center;
+    color: #64748b;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+}
+
+/* Newsletter signup feedback */
+.newsletter-message {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}

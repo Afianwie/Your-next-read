@@ -1,0 +1,9 @@
+# Local secrets — never commit database passwords or service keys
+.env
+.env.local
+*.local
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
+.vscode/
